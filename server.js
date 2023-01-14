@@ -1,7 +1,7 @@
 const express = require('express');  // import express module
 const app = express();  // create an express application instance
 const path = require('path');  // import path module
-const PORT = 3001;  // define the PORT at 3001
+const PORT = process.env.PORT || 3001;  // define the PORT at 3001
 const apiRouter = require('./routes/apiRoutes');  // import apiRoutes module
 const htmlRouter = require('./routes/htmlRoutes');  // import htmlRoutes module
 

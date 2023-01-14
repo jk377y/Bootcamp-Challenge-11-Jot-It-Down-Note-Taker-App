@@ -8,11 +8,15 @@ const uuid = require('uuid');  // imports uuid npm package
 apiRouter.get('/notes', (req, res) => {  // when the GET api/notes route is executed
     let data = fs.readFileSync(path.join(__dirname, '..', '/develop/db/db.json'));  // the db.json file will be read also
     res.json(JSON.parse(data));  //  response is the data parsed as json
-    });
+});
 
-// this is the POST api/notes route
-    apiRouter.post('/notes', (req, res) => {  // 
-
-    });
+// when the save button is clicked, the POST api/notes route is executed; 
+apiRouter.post('/notes', (req, res) => {  // when the POST api/notes route is executed
+    let notes = JSON.parse(fs.readFileSync(path.join(__dirname, '..', '/develop/db/db.json'), 'utf8'));  // creating a variable the is the db.json object
+    let newNote = { id: uuid.v4(), ...req.body };
+    notes.push(newNote);  
+    fs.writeFileSync(path.join(__dirname, '..', '/develop/db/db.json'), JSON.stringify(notes));
+    res.json(newNote);
+});
 
 module.exports = apiRouter;

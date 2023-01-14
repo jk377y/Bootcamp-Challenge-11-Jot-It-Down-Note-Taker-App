@@ -11,6 +11,6 @@ app.use('/api', apiRouter);  // use the apiRouter for all routes starting with '
 app.use('/', htmlRouter);  // use the htmlRouter for all routes starting with '/'
 
 
-app.listen(3001, () => {  // start the server and listen on PORT 3001
+app.listen(PORT, () => {  // start the server and listen on PORT 3001
   console.log(`Server started on port ${PORT}`);  // log a message to the console when the server starts
 });

@@ -19,9 +19,10 @@ apiRouter.post('/notes', (req, res) => {  // when the POST api/notes route is ex
     res.json(newNote);  // sends the newNote object as a json formatted response
 });
 
-apiRouter.delete('/notes/:id', (req, res) => {  // the delete button will target the unique ID of the note
+// added delete functionality for the trash can icon
+apiRouter.delete('/notes/:id', (req, res) => {  // the delete button will target the unique ID of the note within the db.json file
     let notes = JSON.parse(fs.readFileSync(path.join(__dirname, '..', '/develop/db/db.json')));  // reads the db.json file, parse it as JSON and assigns it to the variable notes
-    notes = notes.filter(note => note.id !== req.params.id);  // filter() method targets the note with the matching id parameter and removes it
+    notes = notes.filter(note => note.id !== req.params.id);  // filter() method targets the note with the matching id parameter and removes it; the function checks if the "id" property of each note object is not equal to the "id" parameter passed in the request's URL (req.params.id). If the "id" property of a note object does not match the "id" parameter, that note object is included in the returned array
     fs.writeFileSync(path.join(__dirname, '..', '/develop/db/db.json'), JSON.stringify(notes));  // writes the updated notes[] to the db.json file
     res.json({ message: `Note with id: ${req.params.id} deleted.` });  // sends a message in json format that confirms the note with its unique ID defined has been deleted; this can be viewed in chrome dev tools under the network tab, click on the unique ID under the name column, then choose to view the response
 }); 

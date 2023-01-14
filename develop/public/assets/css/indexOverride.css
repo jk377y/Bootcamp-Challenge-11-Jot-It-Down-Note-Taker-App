@@ -1,3 +1,5 @@
+/* I created this file to overwrite some of the build in css so that i could have somewhat of a darkmode effect, my eyes are burning from the light mode */
+
 :root{
 --bg: rgb(44, 44, 44);
 }

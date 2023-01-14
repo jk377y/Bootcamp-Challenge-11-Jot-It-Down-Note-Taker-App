@@ -29,14 +29,17 @@ The application can be viewed and test at the link below.
 <br>
 
 Screenshot of the deployed index.html page
+<br>
 <img src="./develop/public/assets/images/liveIndex.JPG" alt="screenshot of deployed application home page" width=900px>
 <br>
 
 Screenshot of the deployed notes.html page
+<br>
 <img src="./develop/public/assets/images/liveNotes.JPG" alt="screenshot of deployed application notes page" width=900px>
 <br>
 
 Screenshot of the response given when a note is deleted from the notes.html page
+<br>
 <img src="./develop/public/assets/images/deleteFeature.JPG" alt="screenshot of delete functionality being logged in the response after clicking the trash can on a note" width=900px>
 <br>
 

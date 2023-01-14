@@ -7,6 +7,7 @@ background-color: var(--bg);
 .note-title {
 color: #ffffff;
 background-color: var(--bg);
+font-size: 36px;
 }
 .note-textarea {
 color: white;

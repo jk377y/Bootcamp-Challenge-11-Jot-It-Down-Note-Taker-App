@@ -20,6 +20,7 @@ You must have imported all the necessary modules and packages:
     <br>&emsp;3) FS node module
     <br>&emsp;4) PATH node module
 <br>
+
 ## Usage
 The application can be viewed and test at the link below.
 <br>https://jk377y-notes.herokuapp.com/
@@ -38,11 +39,13 @@ Screenshot of the deployed notes.html page
 Screenshot of the response given when a note is deleted from the notes.html page
 <img src="./develop/public/assets/images/deleteFeature.JPG" alt="screenshot of delete functionality being logged in the response after clicking the trash can on a note" width=900px>
 <br>
+
 ## Questions
 For Questions, I can be reached at the following:
 <br>GitHub:  https://github.com/jk377y
 <br>OR
 <br>Email:  jk377y@gmail.com
+
 ## Contributing
 NPM - npmjs.com (for research and documentation referencing)
 <br>
@@ -50,6 +53,7 @@ Heroku - Heroku.com for documentation and providing deployment services
 <br>
 You also can help support me by donating with 💵Cash App💵 @ 💵$JK377Y💵
 <br>
+
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 <br>Copyright (c) 2023 James Kelly

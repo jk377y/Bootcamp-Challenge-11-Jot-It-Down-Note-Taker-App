@@ -18,7 +18,7 @@ This is a note taking app that can accept inputs inside the web browser and stor
 You must have node.js installed on your system.
 You can run [npm i] to install all the required npm packages.
 You must have imported all the necessary modules and packages:
-    <br>&emsp;<h3 style="color:red">1) Express npm package</h3>
+    <br>&emsp;1) Express npm package
     <br>&emsp;2) UUID npm package
     <br>&emsp;3) FS node module
     <br>&emsp;4) PATH node module

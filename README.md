@@ -11,6 +11,7 @@ This is a note taking app that can accept inputs inside the web browser and stor
 - [Contributing](#contributing)
 - [License](#license)
 <br>
+
 ## Installation
 You must have node.js installed on your system.
 You can run [npm i] to install all the required npm packages.

@@ -12,4 +12,4 @@ htmlRouter.get('*', (req, res) => {   // this is a GET request for * (wildcard);
     res.sendFile(path.join(__dirname, '..', '/develop/public/index.html'));  // index.html is sent back to the client
     });
 
-module.exports = htmlRouter;  // this allows the htmlRouter routes to be exported to other files for usage
+module.exports = htmlRouter;  // this allows the htmlRouter routes to be exported to other files for usagejklajfaiofewaiof
